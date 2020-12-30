@@ -1,4 +1,4 @@
-package de.htw_berlin.security
+package com.github.dawidwalczak.security
 
 /**
  * This object contains a factory method to create key managers for a given keystore.
