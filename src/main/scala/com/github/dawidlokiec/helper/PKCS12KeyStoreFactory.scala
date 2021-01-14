@@ -1,7 +1,7 @@
-package com.github.dawidlokiec.security
+package com.github.dawidlokiec.helper
 
 /**
- * This object contains a factory method to create a java.security.KeyStore in PKCS12 format.
+ * This object contains a factory method to create a java.helper.KeyStore in PKCS12 format.
  */
 object PKCS12KeyStoreFactory {
 
