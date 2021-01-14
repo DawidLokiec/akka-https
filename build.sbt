@@ -1,4 +1,4 @@
-organization := "com.github.dawidwalczak"
+organization := "com.github.dawidlokiec"
 name := "akka-https"
 val $version = "0.1.0"
 version := $version
