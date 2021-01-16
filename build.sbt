@@ -15,3 +15,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion % "provided",
   "org.slf4j" % "slf4j-simple" % slf4jVersion % "provided",
 )
+
+val scalaTest = "3.2.3"
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % scalaTest % Test,
+)
