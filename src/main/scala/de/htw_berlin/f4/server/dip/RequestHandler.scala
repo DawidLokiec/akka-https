@@ -1,4 +1,4 @@
-package com.github.dawidlokiec.server.dip
+package de.htw_berlin.f4.server.dip
 
 /**
  * This trait defines the methods of a HTTP request handler.

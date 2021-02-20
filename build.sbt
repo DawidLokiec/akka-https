@@ -1,6 +1,6 @@
 organization := "com.github.dawidlokiec"
 name := "akka-https"
-val $version = "0.1.0"
+val $version = "0.2.0"
 version := $version
 assemblyJarName in assembly := s"akka-https-${$version}.jar"
 scalaVersion := "2.13.4"

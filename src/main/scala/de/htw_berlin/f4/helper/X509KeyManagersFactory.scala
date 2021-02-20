@@ -1,4 +1,4 @@
-package com.github.dawidlokiec.helper
+package de.htw_berlin.f4.helper
 
 /**
  * This object contains a factory method to create key managers for a given keystore.

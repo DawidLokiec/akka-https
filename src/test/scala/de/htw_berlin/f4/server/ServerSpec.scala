@@ -1,4 +1,4 @@
-package com.github.dawidlokiec.server
+package de.htw_berlin.f4.server
 
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.flatspec.AsyncFlatSpec

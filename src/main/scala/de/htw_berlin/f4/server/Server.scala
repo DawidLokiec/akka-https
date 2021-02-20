@@ -1,27 +1,25 @@
-package com.github.dawidlokiec.server
+package de.htw_berlin.f4.server
 
 import akka.actor.typed.ActorSystem
 import akka.http.scaladsl.{Http, HttpsConnectionContext}
 
-
-// TODO test.
 /**
  * Represents a HTTPS server which can be bind to a host and port.
  * The server needs a request handler for processing incoming requests.
  *
  * @param host         the optional host of the server. If not present, then the default value is 0.0.0.0.
  * @param port         the optional port of the server. The default value is 443.
- * @param httpsContext the https connection context for the https connection.
+ * @param httpsContext the HTTPS connection context in order to enable the HTTPS connections.
  * @param actorSystem  an implicit actor system.
- * @see com.github.dawidlokiec.server.dip.RequestHandler
+ * @see RequestHandler
  */
 class Server(val host: String = "0.0.0.0",
              val port: Int = 443,
-             val httpsContext: HttpsConnectionContext)(implicit val actorSystem: ActorSystem[Nothing]) {
+             private val httpsContext: HttpsConnectionContext)(implicit val actorSystem: ActorSystem[Nothing]) {
 
-  import com.github.dawidlokiec.server.dip.RequestHandler
   import scala.concurrent.Future
   import akka.http.scaladsl.Http.ServerBinding
+  import de.htw_berlin.f4.server.dip.RequestHandler
 
   /**
    * Binds the current server to the host and port and uses the passed handler for processing incoming connections.
